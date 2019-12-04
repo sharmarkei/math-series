@@ -26,3 +26,13 @@ def lucas(n):
     return b
 print(lucas(8))
 
+def sum_series(n, a, b):
+
+  for i in range(0, n):
+      temp = a
+      a = b
+      b = temp + b
+  return a
+
+print(sum_series(8, 2, 1))
+
