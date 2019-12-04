@@ -8,3 +8,21 @@ def fibonacci(n):
     return a
 
 print(fibonacci(10))
+
+def lucas(n): 
+  
+    a = 2
+    b = 1
+      
+    if (n == 0) : 
+        return a 
+   
+    # generating number 
+    for i in range(2, n + 1) : 
+        c = a + b 
+        a = b 
+        b = c 
+
+    return b
+print(lucas(8))
+
